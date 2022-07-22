@@ -19,8 +19,8 @@ ENV EASYRSA=/usr/share/easy-rsa \
 
 VOLUME ["/etc/openvpn"]
 
-# Internally uses port 1194/udp, remap using `docker run -p 443:1194/tcp`
-EXPOSE 1194/udp
+# Internally uses port 587/udp, remap using `docker run -p 443:587/tcp`
+EXPOSE 587/udp
 
 CMD ["ovpn_run"]
 
